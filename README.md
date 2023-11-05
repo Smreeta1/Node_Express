@@ -1,1 +1,1 @@
-
+A simple book app where user can add books,read books description,edit books and delete the books. It's basically an application to implement CRUD operation using NodeJS,ExpressJS and MongoDB developed during WLIT Bootcamp for practise.
