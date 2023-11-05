@@ -23,7 +23,8 @@
       <h6 class="card-subtitle mb-2 text-muted">Genre:
       <%=book.genre %> </h6>
       <a href="/books/edit/<%=book._id%>" class="card-link">Edit</a>
-      <a href="#" class="card-link">Delete</a>
+      <a href="/books/remove/<%= book._id %>" class="card-link">Delete</a>
+
       </div>
       </div>
    <% })%>

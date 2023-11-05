@@ -15,6 +15,11 @@ var booksRouter = require('./routes/books');
 
 var app = express();
 
+
+
+
+const db = require('./db')
+
 // parse application/x-www-form-urlencoded
 app.use(bodyParser.urlencoded({ extended: false }))
 		
@@ -34,6 +39,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
 app.use('/books', booksRouter); //added route
+
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
